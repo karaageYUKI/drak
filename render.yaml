@@ -2,7 +2,6 @@ services:
   - name: my-react-website
     type: web
     region: auto    
-      buildCommand: npm install && npm run build
-      publishDir: build
+      buildCommand: npm install
     deploy:
-      startCommand: serve -s build
+      startCommand: node index.js
