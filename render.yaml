@@ -1,8 +1,7 @@
 services:
   - name: my-react-website
     type: web
-    region: auto
-    
+    region: auto    
       buildCommand: npm install && npm run build
       publishDir: build
     deploy:
