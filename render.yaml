@@ -2,5 +2,6 @@ services:
   - name: my-web-service
     type: web
     region: us-east-1
+    buildCommand:
       buildCommand: npm install && npm run build
       startCommand: npm start
